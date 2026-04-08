@@ -60,7 +60,7 @@ AI ships (PR, commit, deploy pipeline)
 | 2 | Instruction Files | How you set the rules for every session | **The multiplier** — set up once, every engineer benefits |
 | 3 | Agents | How you create on-demand specialists | Encode expertise that's currently in people's heads |
 | 4 | Skills | How you encode repeatable tasks | Team consistency without policing |
-| 5 | MCP | How AI reaches external systems | Eliminates context-switching, connects to real data |
+| 5 | MCP & External Integrations | How AI reaches external systems (ADO, GitHub, etc.) | Eliminates context-switching, connects to real data |
 | 6 | Automation | How AI runs without you | The bridge from "tool" to "pipeline" |
 
 ---
@@ -74,7 +74,7 @@ AI ships (PR, commit, deploy pipeline)
 | Pillar 2 | 10 min | Instruction Files | Concept (3 min) + hands-on (7 min) |
 | Pillar 3 | 12 min | Agents | Concept (3 min) + hands-on (9 min) |
 | Pillar 4 | 12 min | Skills | Concept (3 min) + hands-on (9 min) |
-| Pillar 5 | 12 min | MCP | Concept (3 min) + hands-on (9 min) |
+| Pillar 5 | 12 min | MCP & External Integrations (ADO) | Concept (3 min) + hands-on (9 min) |
 | Pillar 6 | 10 min | Automation | Concept (3 min) + hands-on (7 min) |
 | Break | 10 min | | |
 | Capstone | 30 min | "Set Up Your Team's AI Workflow" | Guided exercise |
@@ -92,12 +92,12 @@ A live demo: **user story to merged PR in one terminal session**, no context-swi
 ### Demo Script (abbreviated)
 
 ```
-1. Pull a GitHub issue using MCP          → "List open issues in this repo"
-2. Plan the approach                       → /plan <feature from the issue>
-3. Switch to a specialist agent            → /agent python-reviewer
+1. Pull a work item from Azure DevOps      → "Show me work item #576684"
+2. Plan the approach                        → /plan <feature from the work item>
+3. Switch to a specialist agent             → /agent python-reviewer
 4. Implement (skill auto-triggers standards)
-5. Review                                  → /review
-6. Ship                                    → /pr create
+5. Review                                   → /review
+6. Ship                                     → /pr create
 ```
 
 ### Key Message
@@ -254,32 +254,49 @@ When reviewing a pull request:
 
 ---
 
-## Pillar 5: MCP (12 min)
+## Pillar 5: MCP & External Integrations (12 min)
 
 ### Concept (3 min)
 
 - MCP = Model Context Protocol — lets AI reach out to external services
 - Think of it as: **browser extensions for Copilot**
-- Without MCP: you copy-paste data from GitHub/Jira/docs into the terminal
-- With MCP: Copilot fetches it directly
+- Without MCP/CLI: you copy-paste data from ADO/GitHub/Jira into the terminal
+- With integrations: Copilot fetches it directly
 
-| Server | What It Accesses | Setup Required |
-|--------|-----------------|----------------|
-| GitHub | Issues, PRs, commits, repos | Built-in — just `/login` |
-| Filesystem | Local files beyond `@` references | Config file |
-| Context7 | Live library documentation | Config file |
+**Two ways to connect to Azure DevOps:**
+
+| Method | How It Works | Trade-off |
+|--------|-------------|-----------|
+| **ADO MCP Server** (`@azure-devops/mcp`) | Registers 88 tools at startup via MCP protocol | Rich capabilities (test plans, search, advanced security) but consumes context window upfront |
+| **Azure DevOps CLI Skill** (`az-devops-cli`) | Loads `az` CLI reference on-demand when ADO task detected | Lightweight — preserves context for coding; covers releases, artifacts, security/admin that MCP doesn't |
+
+**When to use which:**
+- **CLI Skill (recommended default):** Occasional ADO interactions during coding sessions — keeps context clean
+- **MCP Server:** Heavy, continuous ADO interaction (bulk work items, test plans, code search)
 
 ### Hands-On Exercise (9 min)
 
+**Option A: CLI Skill approach (recommended)**
 ```
-1. Try GitHub MCP immediately:     > List the 5 most recent commits in this repository
-2. Fetch issue context:            > Show me the open issues in this repository
-3. Combine with planning:          > Based on issue #X, create a technical plan for implementation
-4. Combine with agents:            > /agent security-reviewer
+1. Verify setup:                   az devops configure --list
+2. Query work items naturally:     > Show me my active work items in Azure DevOps
+   (Agent runs:                    az boards query --wiql "SELECT ... WHERE [System.AssignedTo] = @Me")
+3. Get PR context:                 > List active PRs in the Copilot-Wiki repo
+   (Agent runs:                    az repos pr list --repository "Copilot-Wiki" --status active)
+4. Combine with planning:          > Based on work item #576684, create a technical plan
+5. Combine with agents:            > /agent security-reviewer
                                    > Review the changes in the most recent PR
 ```
 
-**Takeaway:** The AI just pulled live data from GitHub, planned work based on it, and reviewed it through a security lens — all without you leaving the terminal or copy-pasting anything.
+**Option B: MCP approach**
+```
+1. Start with MCP configured:     (.vscode/mcp.json with @azure-devops/mcp)
+2. Query directly:                 > List all active work items assigned to me
+3. Create a work item:             > Log a bug: "Search returns stale results after cache invalidation"
+4. View pipeline status:           > Show me the last 5 builds for the CI-Build pipeline
+```
+
+**Takeaway:** Both approaches let AI pull live data from Azure DevOps without copy-paste. The CLI Skill is lighter; the MCP is richer. Pick based on how heavily your team uses ADO during coding sessions.
 
 ---
 
@@ -336,7 +353,7 @@ AGENTS.md                              ← Always-on team standards
 ```
 
 And you'll have demonstrated:
-- Researching the problem using MCP
+- Researching the problem using ADO integration (CLI Skill or MCP)
 - Planning the implementation using `/plan`
 - Delegating (or briefing) the work
 - Reviewing the output
@@ -348,7 +365,8 @@ And you'll have demonstrated:
 ```
 1. Start a session:                copilot
 2. Name it:                        > /rename capstone-workshop
-3. Pull context via MCP:           > What are the open issues in this repository?
+3. Pull context from ADO:          > Show me the details of work item #576684 in Azure DevOps
+                                   (or via MCP: > List active work items assigned to me)
 4. Understand the codebase:        > @samples/book-app-project/ Give me an overview of this project's
                                      architecture and how book search currently works
 5. Plan the feature:               > /plan Add a search_by_year_range function that accepts a start_year
