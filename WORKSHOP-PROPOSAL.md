@@ -1,6 +1,6 @@
 # AI-Augmented Engineering Workshop
 
-> **Proposal Draft v1** — For review before slide conversion
+> **Proposal Draft v2** — Updated based on review feedback
 
 ---
 
@@ -11,7 +11,7 @@
 | **Goal** | Shift team leads from "AI as autocomplete" to "AI as delegatable specialist" — and equip them to bring this mindset and toolkit to their teams |
 | **Audience** | Engineering team leads (technical, varying AI tooling experience) |
 | **Format** | On-site, hands-on workshop |
-| **Duration** | ~2.5 hours |
+| **Duration** | ~3 hours |
 | **Prerequisites** | GitHub Copilot subscription active, Copilot CLI installed and authenticated (pre-work sent 1 week before) |
 
 ### Outcomes
@@ -69,17 +69,17 @@ AI ships (PR, commit, deploy pipeline)
 
 | Block | Duration | Content | Format |
 |-------|----------|---------|--------|
-| Opening | 10 min | The AI-augmented pipeline vision + live demo | Presentation + demo |
-| Pillar 1 | 15 min | Context & Commands | Concept (3 min) + hands-on (12 min) |
-| Pillar 2 | 10 min | Instruction Files | Concept (3 min) + hands-on (7 min) |
-| Pillar 3 | 12 min | Agents | Concept (3 min) + hands-on (9 min) |
-| Pillar 4 | 12 min | Skills | Concept (3 min) + hands-on (9 min) |
-| Pillar 5 | 12 min | MCP & External Integrations (ADO) | Concept (3 min) + hands-on (9 min) |
-| Pillar 6 | 10 min | Automation | Concept (3 min) + hands-on (7 min) |
+| Opening | 15 min | The vision + live demo (user story → merged PR) | Presentation + demo |
+| Pillar 1 | 15 min | Context & Commands | Concept + hands-on |
+| Pillar 2 | 20 min | Instruction Files + Indexing Pattern | Concept + hands-on |
+| Pillar 3 | 15 min | Agents | Concept + hands-on |
+| Pillar 4 | 30 min | Skills — Why, What, In Action | Concept + code review demo |
+| Pillar 5 | 15 min | Integration Choices (MCP vs CLI Skill) | Concept + comparison |
+| Pillar 6 | 15 min | Automation — Pipeline Example | Concept + hands-on |
 | Break | 10 min | | |
-| Capstone | 30 min | "Set Up Your Team's AI Workflow" | Guided exercise |
-| Closing | 10 min | Rollout playbook + Q&A | Discussion |
-| **Total** | **~2.5 hrs** | | |
+| Capstone | 50 min | "Design + Build a Skill Together" | Facilitator-led, hands-on |
+| Closing | 15 min | Rollout playbook + Q&A | Discussion |
+| **Total** | **~3 hrs** | | |
 
 ---
 
