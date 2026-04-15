@@ -1,0 +1,8 @@
+{
+    "name": "my-plugin",
+    "description": "Capstone template — rename this and the skill below to match your team's need",
+    "keywords": ["capstone", "workshop"],
+    "skills": [
+        "./skills/example-skill"
+    ]
+}
