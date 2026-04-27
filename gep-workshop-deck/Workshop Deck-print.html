@@ -1,0 +1,1520 @@
+<!DOCTYPE html><html lang="en" style="--accent-h: 270;" data-mode="light"><head>
+
+
+
+
+<meta charset="utf-8">
+<title>AI-Augmented Engineering Workshop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+<script src="deck-stage.js"></script>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+<!-- ========================================================== -->
+<!-- 01  HERO / TITLE                                             -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Title" data-screen-label="01 Title" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="0" style="position: relative; overflow: hidden; padding: 0;">
+  <div aria-hidden="true" style="position: absolute; inset: 0; background: url('assets/synapxe-gradient-bg.jpg') center/cover no-repeat; opacity: 0.18; pointer-events: none;"></div>
+  <div aria-hidden="true" style="position: absolute; top: 0; left: 0; right: 0; height: 8px; background: var(--brand-gradient);"></div>
+
+  <div style="position: relative; display: flex; flex-direction: column; padding: 72px 96px; height: 100%;">
+  <div class="slide-header" style="position: relative;">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo" style="height: 40px;"></div>
+    <div class="eyebrow"><span class="dot"></span>Session 01 / Introduction</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: center; position: relative;">
+    <div>
+      <div class="eyebrow" style="margin-bottom: 28px;">On-site · Hands-on · ~3 hours · AI Champions &amp; Team Leads</div>
+      <h1 class="hero">AI-Augmented<br>Engineering<br>Workshop<span class="accent-text">.</span></h1>
+      <div class="lede" style="margin-top: 40px; max-width: 28ch;">From autocomplete to a delegatable specialist.</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div class="card">
+        <div class="card-h accent">What we'll do</div>
+        <div style="font-size: 30px; line-height:1.35; color: var(--ink);">Install a plugin. Run it live. Unpack the 6 pillars underneath. Ship one real skill before you leave.</div>
+      </div>
+      <div class="card plain" style="background: transparent; border-style: dashed;">
+        <div class="kv">
+          <dt>Format</dt><dd>Live demo → teach-back → capstone</dd>
+          <dt>Duration</dt><dd>~3h 10m</dd>
+          <dt>You need</dt><dd>Laptop · repo access · Copilot CLI</dd>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer" style="position: relative;">
+    <span class="tag">Restricted · Internal · © Synapxe Pte Ltd</span>
+    <span>Press → to begin</span>
+  </div>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 02  MINDSET — LEDE                                           -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="The Mindset Shift" data-screen-label="02 The Mindset Shift" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="1">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>01 / Mindset</div>
+  </div>
+
+  <div style="flex:1; display: flex; flex-direction: column; justify-content: center; max-width: 1400px;">
+    <div class="eyebrow accent" style="margin-bottom: 36px;">The mindset shift</div>
+    <h1 class="display" style="max-width: 24ch;">AI is not a typing assistant.<br><span class="muted">It's a junior team member that follows your standards.</span></h1>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/mindset/lede</span>
+    <span>01 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 03  MINDSET — TODAY vs TOMORROW                              -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Today vs Tomorrow" data-screen-label="03 Today vs Tomorrow" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="2">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>01 / Mindset</div>
+  </div>
+
+  <h2 class="title" style="max-width: 20ch;">From autocomplete<br>to <span class="accent-text">delegation</span>.</h2>
+
+  <div class="compare" style="margin-top: 56px;">
+    <div class="side today">
+      <h4>Today</h4>
+      <div class="line"><span class="n">1</span><span>Developer writes code</span></div>
+      <div class="line"><span class="n">2</span><span>AI suggests autocomplete</span></div>
+      <div class="line"><span class="n">3</span><span>Developer accepts / rejects</span></div>
+      <div style="margin-top: 28px;" class="tag-sm muted">Linear · keystroke-level assistance</div>
+    </div>
+    <div class="arrow">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12h16m-5-6l6 6-6 6"></path></svg>
+    </div>
+    <div class="side tomorrow">
+      <h4>Tomorrow</h4>
+      <div class="line"><span class="n">1</span><span>Lead sets up the system</span></div>
+      <div class="line"><span class="n">2</span><span>Engineer describes the problem</span></div>
+      <div class="line"><span class="n">3</span><span>AI executes with team standards</span></div>
+      <div class="line"><span class="n">4</span><span>Engineer reviews &amp; approves</span></div>
+      <div style="margin-top: 20px;" class="tag-sm">Delegated · standards-driven · parallelized</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/mindset/today-tomorrow</span>
+    <span>02 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 04  OUTCOMES                                                  -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Outcomes" data-screen-label="04 Outcomes" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="3">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>02 / Outcomes</div>
+  </div>
+
+  <h2 class="title" style="max-width: 18ch;">What you'll walk<br>away with.</h2>
+
+  <ol class="numbered" style="margin-top: 64px; max-width: 1400px;">
+    <li><span><strong>Understand</strong> the 6 pillars of agentic AI tooling — and how they compose into one plugin.</span></li>
+    <li><span><strong>Experience each pillar hands-on</strong> with concrete C# and TypeScript examples on a real repo.</span></li>
+    <li><span><strong>Build a working skill</strong> for your team — not a concept. A real, committable artifact.</span></li>
+    <li><span><strong>Design the AI workflow</strong> your engineers will actually use day-to-day.</span></li>
+    <li><span><strong>Leave with a playbook</strong> for rolling this out to the rest of your engineering org.</span></li>
+  </ol>
+
+  <div class="slide-footer">
+    <span class="tag">/intro/outcomes</span>
+    <span>03 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 05  AGENDA                                                    -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Agenda" data-screen-label="05 Agenda" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="4">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>03 / Agenda</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: auto 1fr; gap: 80px; align-items: end;">
+    <h2 class="title" style="max-width: 10ch; font-size: 48px;">Three hours,<br>ten moves.</h2>
+    <div class="tag-sm" style="padding-bottom: 10px;">Total ~3h 10m</div>
+  </div>
+
+  <div style="margin-top: 28px; border-top: 1px solid var(--rule);">
+    <style>
+      .agenda-row { display: grid; grid-template-columns: 90px 220px 1fr 160px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--rule); gap: 24px; }
+      .agenda-row .mins { font-family: var(--mono); color: var(--ink-4); font-size: 19px; letter-spacing: 0.04em; }
+      .agenda-row .tag { font-family: var(--mono); font-size: 17px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
+      .agenda-row .what { font-size: 28px; color: var(--ink); letter-spacing: -0.01em; }
+      .agenda-row .kind { justify-self: end; font-family: var(--mono); font-size: 16px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); }
+      .agenda-row.accent .what { color: var(--accent); }
+      .agenda-row.accent .tag { color: var(--accent); }
+    </style>
+    <div class="agenda-row accent"><span class="mins">15 min</span><span class="tag">Opening</span><span class="what">Install plugin → run code review PR live</span><span class="kind">Demo</span></div>
+    <div class="agenda-row"><span class="mins">15 min</span><span class="tag">Pillar 1</span><span class="what">Context &amp; Commands — Quick Start</span><span class="kind">Hands-on</span></div>
+    <div class="agenda-row"><span class="mins">20 min</span><span class="tag">Pillar 2</span><span class="what">Instruction Files + Indexing Pattern</span><span class="kind">Hands-on</span></div>
+    <div class="agenda-row"><span class="mins">20 min</span><span class="tag">Pillar 3</span><span class="what">Agents + Sub-Agent Orchestration</span><span class="kind">Hands-on</span></div>
+    <div class="agenda-row"><span class="mins">30 min</span><span class="tag">Pillar 4</span><span class="what">Skills — Why, What, Code Review Showcase</span><span class="kind">Deep dive</span></div>
+    <div class="agenda-row"><span class="mins">15 min</span><span class="tag">Pillar 5</span><span class="what">Integration Choices — MCP vs CLI Skill</span><span class="kind">Compare</span></div>
+    <div class="agenda-row"><span class="mins">10 min</span><span class="tag">Composition</span><span class="what">How a plugin ties it all together</span><span class="kind">Reveal</span></div>
+    <div class="agenda-row"><span class="mins">10 min</span><span class="tag">Break</span><span class="what">Coffee &amp; stretch</span><span class="kind">—</span></div>
+    <div class="agenda-row accent"><span class="mins">35 min</span><span class="tag">Capstone</span><span class="what">Fork the template, ship 1 skill</span><span class="kind">Build</span></div>
+    <div class="agenda-row"><span class="mins">10 min</span><span class="tag">Closing</span><span class="what">Rollout playbook + Q&amp;A</span><span class="kind">Wrap</span></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/intro/agenda</span>
+    <span>04 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 06  OPENING — SECTION COVER                                   -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Opening Cover" style="background: var(--ink); color: var(--bg);" data-screen-label="06 Opening Cover" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="5">
+  <div class="slide-header" style="color: var(--ink-5);">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo brand-logo-light"></div>
+    <div class="eyebrow" style="color: var(--ink-5);"><span class="dot"></span>Live Demo</div>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+    <div class="eyebrow accent" style="margin-bottom: 36px;">Opening</div>
+    <h1 class="hero" style="color: var(--bg); max-width: 18ch;">See it all<br>at once.</h1>
+    <div class="lede" style="color: var(--ink-5); margin-top: 40px; max-width: 30ch;">One install. One command. All six pillars in motion.</div>
+  </div>
+
+  <div class="slide-footer" style="border-color: #2A2A2D; color: var(--ink-5);">
+    <span class="tag" style="color: var(--ink-5);">/opening/cover</span>
+    <span>05 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 07  OPENING — LIVE FLOW                                       -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Opening Live Flow" data-screen-label="07 Opening Live Flow" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="6">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>Live Demo · 15 min</div>
+  </div>
+
+  <h2 class="title" style="max-width: 24ch;">Install a plugin, then run it.</h2>
+  <div class="lede muted" style="margin-top: 10px;">1 agent · 6 skills · ADO MCP — bundled.</div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 28px; flex:1; min-height: 0; align-items: start;">
+    <div class="term" style="font-size: 20px; line-height: 1.45;">
+      <div class="term-head">
+        <span class="dots"><i></i><i></i><i></i></span>
+        <span>zsh · ~/demo-repo</span>
+      </div>
+      <div class="term-body" style="padding: 16px 20px;"><span class="com"># Install plugin → start Copilot CLI</span>
+<span class="prompt">$</span> <span class="cmd">copilot</span>
+
+<span class="com"># Invoke the code-review agent</span>
+<span class="prompt">&gt;</span> <span class="cmd">code review PR <span class="num">#1234</span></span>
+
+<span class="out">· Fetching PR via ADO MCP…</span>
+<span class="out">· Dispatching sub-agents in parallel:</span>
+<span class="out">    → security · quality · performance</span>
+<span class="out">· Posting inline comments at file:line ↗</span>
+</div>
+    </div>
+
+    <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; counter-reset: step;">
+      <li style="font-size: 21px; line-height: 1.3; counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">01</span><span><strong>Install</strong> <span class="muted">— <span class="inline-code" style="font-size: 0.85em;">code-review</span> plugin from VS Code.</span></span></li>
+      <li style="font-size: 21px; line-height: 1.3; counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">02</span><span><strong>Launch</strong> <span class="muted">— <span class="inline-code" style="font-size: 0.85em;">copilot</span> in your terminal.</span></span></li>
+      <li style="font-size: 21px; line-height: 1.3; counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">03</span><span><strong>Invoke</strong> <span class="muted">— <span class="inline-code" style="font-size: 0.85em;">code review PR #1234</span></span></span></li>
+      <li style="font-size: 21px; line-height: 1.3; counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">04</span><span><strong>Fetch</strong> <span class="muted">— agent pulls PR via ADO MCP.</span></span></li>
+      <li style="font-size: 21px; line-height: 1.3; counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">05</span><span><strong>Parallel</strong> <span class="muted">— 3 policies run concurrently.</span></span></li>
+      <li style="font-size: 21px; line-height: 1.3; counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">06</span><span><strong>Post</strong> <span class="muted">— threaded inline comments at file:line.</span></span></li>
+    </ol>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/opening/flow</span>
+    <span>06 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 08  PILLAR 1 COVER                                            -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 1 Cover" data-screen-label="08 Pillar 1 Cover" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="7">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>Pillar 1 of 6</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: auto 1fr; gap: 80px; align-items: end;">
+    <div class="big-num">01</div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 20px;">Pillar 1 · Foundations</div>
+      <h1 class="display" style="max-width: 18ch;">Context &amp; Commands.</h1>
+      <div class="lede" style="margin-top: 28px; max-width: 28ch;">The basics: how to talk to AI and direct it.</div>
+    </div>
+  </div>
+
+  <hr class="rule" style="margin-top: 60px;">
+  <div style="display:flex; gap: 48px; margin-top: 28px;">
+    <div><span class="tag-sm muted">Duration</span><div style="font-size: 32px; margin-top:4px;">15 min</div></div>
+    <div><span class="tag-sm muted">Format</span><div style="font-size: 32px; margin-top:4px;">Hands-on</div></div>
+    <div><span class="tag-sm muted">Covers</span><div style="font-size: 32px; margin-top:4px;">@mentions · /slash · sessions</div></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p1/cover</span>
+    <span>07 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 09  PILLAR 1 — THE ESSENTIALS                                 -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 1 Essentials" data-screen-label="09 Pillar 1 Essentials" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="8">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">1</span>CONTEXT &amp; COMMANDS</div>
+  </div>
+
+  <h2 class="title">The essentials.</h2>
+  <div class="lede muted" style="margin-top: 12px;">Four moves that cover 80% of your daily AI use.</div>
+
+  <div class="grid-4" style="margin-top: 56px; flex:1;">
+    <div class="card">
+      <div class="card-h accent">@ · Reference</div>
+      <div style="font-family: var(--mono); font-size: 26px; color: var(--ink);">@file.cs<br>@folder/</div>
+      <div class="muted" style="margin-top: 16px; font-size: 24px;">Pin files or folders into the conversation.</div>
+    </div>
+    <div class="card">
+      <div class="card-h accent">/plan</div>
+      <div style="font-family: var(--mono); font-size: 26px; color: var(--ink);">/plan</div>
+      <div class="muted" style="margin-top: 16px; font-size: 24px;">Think before coding. AI drafts the approach first.</div>
+    </div>
+    <div class="card">
+      <div class="card-h accent">/review</div>
+      <div style="font-family: var(--mono); font-size: 26px; color: var(--ink);">/review</div>
+      <div class="muted" style="margin-top: 16px; font-size: 24px;">Check before committing. Catches regressions early.</div>
+    </div>
+    <div class="card">
+      <div class="card-h accent">/research</div>
+      <div style="font-family: var(--mono); font-size: 26px; color: var(--ink);">/research</div>
+      <div class="muted" style="margin-top: 16px; font-size: 24px;">Understand before building. Map the unknowns.</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px; padding: 20px 28px; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 6px;">
+    <span class="mono" style="font-size: 18px; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase;">Bonus ·</span>
+    <span style="color: var(--ink); font-size: 26px; margin-left: 10px;">Sessions auto-save &amp; resume — pick up yesterday's thread with <span class="inline-code">/context</span>.</span>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p1/essentials</span>
+    <span>08 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 10  PILLAR 1 — HANDS ON                                       -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 1 Hands-on" data-screen-label="10 Pillar 1 Hands-on" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="9">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">1</span>HANDS-ON</div>
+  </div>
+
+  <h2 class="title">Try it on the repo.</h2>
+  <div class="lede muted" style="margin-top: 10px;">Open <span class="inline-code">copilot</span> and run these in order.</div>
+
+  <div style="margin-top: 28px; flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; min-height: 0;">
+    <div class="term" style="font-size: 18px;">
+      <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>copilot · session #1</span></div>
+      <div class="term-body" style="font-size: 18px; line-height: 1.5;"><span class="prompt">&gt;</span> <span class="cmd">@BooksController.cs What does GetByAuthor do?</span>
+
+<span class="out">· Opens file · summarizes behavior · lists callers</span>
+
+<span class="prompt">&gt;</span> <span class="cmd">"Partial names return no results. Debug."</span>
+
+<span class="out">· Reads method · compares query vs input · proposes fix</span>
+
+<span class="prompt">&gt;</span> <span class="cmd">/plan Fix GetByAuthor search</span>
+
+<span class="out">· Outputs a stepwise plan — not code — for review</span>
+
+<span class="prompt">&gt;</span> <span class="cmd">/context</span>
+
+<span class="out">· Shows loaded files, prior turns, pinned refs</span>
+</div>
+    </div>
+
+    <div class="col" style="justify-content: space-between;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 14px;">What you'll notice</div>
+        <ul class="bullets" style="font-size: 24px;">
+          <li>AI responses stay grounded in <em>your</em> file — not a guess from training.</li>
+          <li><span class="inline-code">/plan</span> lets you catch the wrong approach before any code lands.</li>
+          <li>Sessions persist — <span class="inline-code">/context</span> tells you what's loaded.</li>
+          <li>No new tools, no setup. It just works on day one.</li>
+        </ul>
+      </div>
+      <div class="card plain" style="background: transparent; border-style: dashed; padding: 20px 24px;">
+        <div class="card-h">Next up</div>
+        <div style="font-size: 24px;">That's the basics. <span class="muted">Deeper agent patterns coming in Pillar 3.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p1/handson</span>
+    <span>09 / 28</span>
+  </div>
+</section>
+
+<!-- ========================================================== -->
+<!-- 11  PILLAR 2 COVER — INSTRUCTION FILES                        -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 2 Cover" data-screen-label="11 Pillar 2 Cover" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="10">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>Pillar 2 of 6</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: auto 1fr; gap: 80px; align-items: end;">
+    <div class="big-num">02</div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 20px;">Pillar 2 · The team-lead multiplier</div>
+      <h1 class="display" style="max-width: 18ch;">Instruction<br>Files.</h1>
+      <div class="lede" style="margin-top: 28px; max-width: 32ch;">Set the rules once. Every session follows them — new hires, contractors, seniors, all the same.</div>
+    </div>
+  </div>
+
+  <hr class="rule" style="margin-top: 60px;">
+  <div style="display:flex; gap: 48px; margin-top: 28px;">
+    <div><span class="tag-sm muted">Duration</span><div style="font-size: 32px; margin-top:4px;">20 min</div></div>
+    <div><span class="tag-sm muted">Artifact</span><div style="font-size: 32px; margin-top:4px;">AGENTS.md</div></div>
+    <div><span class="tag-sm muted">Scope</span><div style="font-size: 32px; margin-top:4px;">Repo root · always-on</div></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p2/cover</span>
+    <span>10 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 12  AGENTS.MD                                                 -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="AGENTS.md" data-screen-label="12 AGENTS.md" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="11">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">2</span>INSTRUCTION FILES</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; flex:1; align-items: start;">
+    <div>
+      <h2 class="title" style="max-width: 16ch;">One file. Every session. Zero policing.</h2>
+
+      <div style="margin-top: 40px; font-size: 34px; line-height: 1.35; color: var(--ink-2); max-width: 24ch; font-weight: 400; letter-spacing: -0.015em;">
+        “You write your coding standards once in <span class="inline-code" style="font-size: 0.8em;">AGENTS.md</span>. Every session in your repo follows them — for new hires, contractors, and senior engineers alike.”
+      </div>
+
+      <ul class="bullets" style="margin-top: 48px; font-size: 26px;">
+        <li><span class="inline-code">AGENTS.md</span> at repo root — always-on for every session.</li>
+        <li><span class="inline-code">/init</span> generates a starter file for you.</li>
+        <li>No one needs to invoke it — it's automatic.</li>
+        <li>Encode team standards without policing every PR.</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <div class="term">
+        <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>copilot · initialize</span></div>
+        <div class="term-body"><span class="prompt">&gt;</span> <span class="cmd">/init</span>
+
+<span class="out">✓ Created AGENTS.md at repo root</span>
+<span class="out">  Edit it to capture your team's standards.</span>
+
+<span class="com"># AGENTS.md — your team's always-on rules</span>
+<span class="com">## C# backend</span>
+  use <span class="str">nullable refs</span>; no <span class="str">#pragma warning</span> without ticket
+<span class="com">## TypeScript frontend</span>
+  <span class="str">strict mode</span> always; no <span class="str">any</span> in reviewed code
+<span class="com">## Commits</span>
+  Conventional commits required
+
+<span class="prompt">&gt;</span> <span class="cmd">@BooksController.cs Review this</span>
+<span class="out">· Applying team standards from AGENTS.md…</span>
+</div>
+      </div>
+      <div class="card plain" style="background: transparent; border: 1px dashed var(--rule); padding: 20px 24px;">
+        <div style="font-size: 26px; color: var(--ink); line-height: 1.4;"><span class="accent-text" style="font-weight:600;">Highest-leverage thing a team lead can set up.</span><br><span class="muted">5 minutes of writing, permanent impact.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p2/agents-md</span>
+    <span>11 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 13  INDEXING PATTERN — PROBLEM                                -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Indexing Problem" data-screen-label="13 Indexing Problem" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="12">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">2</span>SCALING UP</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">One AGENTS.md can't<br>capture a real project.</h2>
+
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 64px; flex:1;">
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 16px;">The problem</div>
+      <div style="font-size: 32px; color: var(--ink-2); line-height: 1.35;">Architecture. API conventions. Deployment. Security. Domain logic. Style guides.</div>
+      <div style="font-size: 32px; color: var(--ink-2); line-height: 1.35; margin-top: 16px;">Stuff <em>all</em> of that into one file and you get a wall of text AI has to read every single turn.</div>
+    </div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 16px;">The pattern</div>
+      <div style="font-size: 32px; color: var(--ink); line-height: 1.35;"><strong>AGENTS.md becomes an index.</strong></div>
+      <div style="font-size: 30px; color: var(--ink-2); line-height: 1.4; margin-top: 16px;">A short file pointing to detailed docs in <span class="inline-code">docs/</span>. AI loads the index always — and pulls in detail only when it's relevant to the task.</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p2/index-problem</span>
+    <span>12 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 14  INDEXING PATTERN — STRUCTURE                              -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Indexing Structure" data-screen-label="14 Indexing Structure" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="13">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">2</span>INDEXING PATTERN</div>
+  </div>
+
+  <h2 class="title" style="max-width: 20ch;">Index in the root. Detail in <span class="inline-code" style="font-size:0.75em; vertical-align: 6px;">docs/</span>.</h2>
+
+  <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 56px; margin-top: 48px; flex:1;">
+    <div class="tree">
+      <div class="row"><span class="g">📁</span><span class="f">your-repo/</span></div>
+      <div class="row hi" style="margin-left: 24px;"><span class="g">├─</span><span class="ic">📄</span><span class="f">AGENTS.md</span><span class="note">index → points to docs</span></div>
+      <div class="row" style="margin-left: 24px;"><span class="g">├─</span><span class="g">📁</span><span class="f">docs/</span></div>
+      <div class="row" style="margin-left: 60px;"><span class="g">│  ├─</span><span>📄</span><span>architecture.md</span></div>
+      <div class="row" style="margin-left: 60px;"><span class="g">│  ├─</span><span>📄</span><span>csharp-conventions.md</span></div>
+      <div class="row" style="margin-left: 60px;"><span class="g">│  ├─</span><span>📄</span><span>typescript-style.md</span></div>
+      <div class="row" style="margin-left: 60px;"><span class="g">│  ├─</span><span>📄</span><span>api-design.md</span></div>
+      <div class="row" style="margin-left: 60px;"><span class="g">│  └─</span><span>📄</span><span>deployment.md</span></div>
+      <div class="row" style="margin-left: 24px;"><span class="g">├─</span><span class="g">📁</span><span class="f">src/</span></div>
+      <div class="row" style="margin-left: 24px;"><span class="g">└─</span><span class="g">...</span></div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <div class="card-h accent">How it reads</div>
+        <div style="font-size: 26px; line-height: 1.4; color: var(--ink-2);">Every session loads <span class="inline-code">AGENTS.md</span> (small, fast). When a task references APIs, AI follows the pointer to <span class="inline-code">docs/api-design.md</span> — and only then.</div>
+      </div>
+      <div class="card">
+        <div class="card-h accent">Why it works</div>
+        <ul class="bullets" style="font-size: 26px;">
+          <li>Keeps AGENTS.md short and editable.</li>
+          <li>Detail docs stay discoverable.</li>
+          <li>Context isn't bloated with irrelevant rules.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p2/index-structure</span>
+    <span>13 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 15  PILLAR 3 COVER                                            -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 3 Cover" data-screen-label="15 Pillar 3 Cover" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="14">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>Pillar 3 of 6</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: auto 1fr; gap: 80px; align-items: end;">
+    <div class="big-num">03</div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 20px;">Pillar 3 · On-demand specialists</div>
+      <h1 class="display" style="max-width: 18ch;">Agents.</h1>
+      <div class="lede" style="margin-top: 28px; max-width: 32ch;">Instruction files set the floor. Agents raise the ceiling.</div>
+    </div>
+  </div>
+
+  <hr class="rule" style="margin-top: 60px;">
+  <div style="display:flex; gap: 48px; margin-top: 28px;">
+    <div><span class="tag-sm muted">Duration</span><div style="font-size: 32px; margin-top:4px;">20 min</div></div>
+    <div><span class="tag-sm muted">Artifact</span><div style="font-size: 32px; margin-top:4px;">*.agent.md</div></div>
+    <div><span class="tag-sm muted">Scope</span><div style="font-size: 32px; margin-top:4px;">Project or user</div></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p3/cover</span>
+    <span>14 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 16  PILLAR 3 — GENERIC vs AGENT                               -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Generic vs Agent" data-screen-label="16 Generic vs Agent" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="15">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">3</span>GENERIC vs AGENT</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">A prompt gives you opinions.<br>An agent gives you a <span class="accent-text">process</span>.</h2>
+
+  <div class="compare" style="margin-top: 56px;">
+    <div class="side today">
+      <h4>Generic prompt</h4>
+      <div style="font-family: var(--mono); font-size: 26px; color: var(--ink); margin-bottom: 24px;">"Review @BooksController.cs"</div>
+      <div class="line"><span class="n">→</span><span>Broad, generic suggestions</span></div>
+      <div class="line"><span class="n">→</span><span>No team conventions applied</span></div>
+      <div class="line"><span class="n">→</span><span>Inconsistent across engineers</span></div>
+    </div>
+    <div class="arrow">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12h16m-5-6l6 6-6 6"></path></svg>
+    </div>
+    <div class="side tomorrow">
+      <h4>With agent</h4>
+      <div style="font-family: var(--mono); font-size: 26px; color: var(--bg); margin-bottom: 24px;">&gt; code review PR #1234</div>
+      <div class="line"><span class="n">1</span><span>Intake — fetch the PR</span></div>
+      <div class="line"><span class="n">2</span><span>Load policies</span></div>
+      <div class="line"><span class="n">3</span><span>Sub-agents run in parallel</span></div>
+      <div class="line"><span class="n">4</span><span>Inline comments posted to ADO</span></div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p3/compare</span>
+    <span>15 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 17  PILLAR 3 — BUILD YOUR OWN                                 -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Build Your Own Agent" data-screen-label="17 Build Your Own Agent" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="16">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">3</span>BUILD YOUR OWN</div>
+  </div>
+
+  <h2 class="title">Build your own agent.</h2>
+  <div class="lede muted" style="margin-top: 10px;">A markdown file with a description. That's it.</div>
+
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 32px; flex:1; min-height: 0;">
+    <div class="col" style="gap: 20px;">
+      <div class="tree" style="font-size: 18px; line-height: 1.45;">
+        <div class="row hi"><span class="g">📁</span><span class="f">.github/agents/</span><span class="note">project scope</span></div>
+        <div class="row" style="margin-left: 24px;"><span class="g">└─</span><span>📄</span><span class="f">code-reviewer.agent.md</span></div>
+        <div class="row" style="margin-top: 14px;"><span class="g">📁</span><span class="f">~/.copilot/agents/</span><span class="note">user scope</span></div>
+        <div class="row" style="margin-left: 24px;"><span class="g">└─</span><span>📄</span><span class="f">code-reviewer.agent.md</span></div>
+      </div>
+      <div class="card plain" style="background: transparent; border: 1px dashed var(--rule); padding: 18px 22px;">
+        <div class="kv" style="font-size: 22px;">
+          <dt>Project</dt><dd>Committed · team-shared</dd>
+          <dt>User</dt><dd>Personal · every repo</dd>
+        </div>
+      </div>
+    </div>
+
+    <div class="term" style="align-self: start; font-size: 18px;">
+      <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>code-reviewer.agent.md</span></div>
+      <div class="term-body" style="font-size: 18px; line-height: 1.5;"><span class="com">---</span>
+<span class="key">name</span>: <span class="str">code-reviewer</span>
+<span class="key">description</span>: <span class="str">"Policy-driven code review"</span>
+<span class="key">triggers</span>:
+  - <span class="str">"code review"</span>
+  - <span class="str">"review PR"</span>
+  - <span class="str">"review my changes"</span>
+<span class="com">---</span>
+
+<span class="fn">## Workflow</span>
+
+1. Fetch the PR via ADO MCP
+2. Load applicable policies
+3. Dispatch sub-agents in parallel
+4. Post threaded comments at file:line
+</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p3/build</span>
+    <span>16 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 18  PILLAR 3 — SUB-AGENT ORCHESTRATION                        -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Sub-Agent Orchestration" data-screen-label="18 Sub-Agent Orchestration" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="17">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">3</span>ORCHESTRATION</div>
+  </div>
+
+  <h2 class="title" style="max-width: 20ch;">Agents calling agents.</h2>
+  <div class="lede muted" style="margin-top: 12px;">How the <span class="inline-code">code-review</span> plugin spans 4+ policies.</div>
+
+  <div style="margin-top: 56px; flex: 1;">
+    <style>
+      .orch { display: grid; grid-template-columns: 280px 60px 1fr; gap: 0; align-items: stretch; }
+      .orch .main { background: var(--ink); color: var(--bg); border-radius: var(--r-md); padding: 28px; }
+      .orch .main .role { font-family: var(--mono); font-size: 16px; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; }
+      .orch .main h3 { margin: 8px 0 20px; font-size: 38px; letter-spacing: -0.02em; }
+      .orch .main ul { list-style: none; padding: 0; margin: 0; font-size: 22px; color: var(--ink-5); line-height: 1.6; }
+      .orch .main ul li::before { content: "› "; color: var(--accent); }
+      .orch .spoke { position: relative; }
+      .orch .spoke svg { width: 100%; height: 100%; }
+      .orch .subs { display: grid; gap: 16px; }
+      .orch .sub { background: var(--bg-elev); border: 1px solid var(--rule); border-radius: var(--r-md); padding: 22px 28px; display: grid; grid-template-columns: 130px 1fr; align-items: center; gap: 28px; }
+      .orch .sub .label { font-family: var(--mono); font-size: 16px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+      .orch .sub .name { font-size: 34px; font-weight: 600; color: var(--ink); letter-spacing: -0.02em; }
+      .orch .sub .desc { font-size: 22px; color: var(--ink-3); margin-top: 4px; }
+    </style>
+
+    <div class="orch">
+      <div class="main">
+        <div class="role">MAIN AGENT</div>
+        <h3>code-reviewer</h3>
+        <ul>
+          <li>Receives PR number</li>
+          <li>Fetches diff via ADO MCP</li>
+          <li>Dispatches policies in parallel</li>
+          <li>Aggregates &amp; posts comments</li>
+        </ul>
+      </div>
+      <div class="spoke">
+        <svg viewBox="0 0 60 240" preserveAspectRatio="none">
+          <path d="M0 120 Q30 120 30 40 T60 40" fill="none" stroke="var(--rule-2)" stroke-width="2"></path>
+          <path d="M0 120 Q30 120 30 120 T60 120" fill="none" stroke="var(--rule-2)" stroke-width="2"></path>
+          <path d="M0 120 Q30 120 30 200 T60 200" fill="none" stroke="var(--rule-2)" stroke-width="2"></path>
+        </svg>
+      </div>
+      <div class="subs">
+        <div class="sub"><div><span class="label">SUB</span></div><div><div class="name">security</div><div class="desc">hims-ads checks · sensitive data handling</div></div></div>
+        <div class="sub"><div><span class="label">SUB</span></div><div><div class="name">quality</div><div class="desc">best-practices · design patterns · readability</div></div></div>
+        <div class="sub"><div><span class="label">SUB</span></div><div><div class="name">performance</div><div class="desc">algorithmic cost · DB access · memory</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p3/orchestration</span>
+    <span>17 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 19  WHY ORCHESTRATION                                         -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Why Orchestration" data-screen-label="19 Why Orchestration" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="18">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">3</span>WHY IT MATTERS</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">Three reasons orchestration<br>beats one big agent.</h2>
+
+  <div class="grid-3" style="margin-top: 64px;">
+    <div class="card">
+      <div class="step-num">01 / Context</div>
+      <div style="font-size: 38px; font-weight: 600; margin-top: 6px; letter-spacing: -0.02em;">Isolation</div>
+      <div style="font-size: 26px; color: var(--ink-3); margin-top: 14px; line-height: 1.4;">Each policy sees only its own <span class="inline-code">checks/*.md</span>. No cross-contamination, no wasted context.</div>
+    </div>
+    <div class="card">
+      <div class="step-num">02 / Domain</div>
+      <div style="font-size: 38px; font-weight: 600; margin-top: 6px; letter-spacing: -0.02em;">Specialization</div>
+      <div style="font-size: 26px; color: var(--ink-3); margin-top: 14px; line-height: 1.4;">Security expertise lives in the security sub-agent. Perf lives in perf. No generalist compromises.</div>
+    </div>
+    <div class="card">
+      <div class="step-num">03 / Speed</div>
+      <div style="font-size: 38px; font-weight: 600; margin-top: 6px; letter-spacing: -0.02em;">Parallelism</div>
+      <div style="font-size: 26px; color: var(--ink-3); margin-top: 14px; line-height: 1.4;">Four policies run concurrently. Review time ≈ slowest policy, not sum of all.</div>
+    </div>
+  </div>
+
+  <div class="card plain" style="margin-top: 48px; background: var(--accent-soft); border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--rule)); padding: 24px 32px;">
+    <div class="card-h accent">When to reach for it</div>
+    <div style="font-size: 28px; color: var(--ink); line-height: 1.4;">Multi-step workflows across domains · tasks bigger than one agent's context · reusable, composable specialists.</div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p3/why</span>
+    <span>18 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 20  PILLAR 4 COVER                                            -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 4 Cover" style="background: var(--ink); color: var(--bg);" data-screen-label="20 Pillar 4 Cover" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="19">
+  <div class="slide-header" style="color: var(--ink-5);">
+    <div class="brand" style="color: var(--ink-5);"><span class="mark" style="background: #fff"></span><span>AI·AUG · WORKSHOP · 2026</span></div>
+    <div class="eyebrow" style="color: var(--ink-5);"><span class="dot"></span>Pillar 4 of 6</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: auto 1fr; gap: 80px; align-items: end;">
+    <div class="big-num" style="color: var(--bg);">04</div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 20px;">Pillar 4 · Encoded procedures</div>
+      <h1 class="display" style="color: var(--bg); max-width: 18ch;">Skills.</h1>
+      <div class="lede" style="color: var(--ink-5); margin-top: 28px; max-width: 28ch;">Tribal knowledge becomes team infrastructure.</div>
+    </div>
+  </div>
+
+  <hr class="rule" style="margin-top: 60px; border-color: #2A2A2D;">
+  <div style="display:flex; gap: 48px; margin-top: 28px;">
+    <div><span class="tag-sm" style="color: var(--ink-5);">Duration</span><div style="font-size: 32px; margin-top:4px;">30 min</div></div>
+    <div><span class="tag-sm" style="color: var(--ink-5);">Parts</span><div style="font-size: 32px; margin-top:4px;">4 sections</div></div>
+    <div><span class="tag-sm" style="color: var(--ink-5);">Showcase</span><div style="font-size: 32px; margin-top:4px;">code-review · checkmarx</div></div>
+  </div>
+
+  <div class="slide-footer" style="border-color: #2A2A2D; color: var(--ink-5);">
+    <span class="tag" style="color: var(--ink-5);">/p4/cover</span>
+    <span>19 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 21  PILLAR 4 PART 1 — WHY SKILLS                              -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Why Skills" data-screen-label="21 Why Skills" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="20">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">4</span>PART 1 · WHY</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">If your team does it<br>more than twice<span class="accent-text">—</span><br>it's probably a skill.</h2>
+
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 56px; flex:1;">
+    <div>
+      <div class="eyebrow" style="margin-bottom: 20px;">Pain today</div>
+      <ul class="bullets" style="font-size: 26px;">
+        <li>Engineers re-explain team conventions every session.</li>
+        <li>PR reviews skip steps when reviewers are busy.</li>
+        <li>Incident response runs differently every time.</li>
+        <li>Onboarding docs go stale while tribal knowledge lives in heads.</li>
+        <li>Same task, different quality — depends who's on it.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 20px;">What skills solve</div>
+      <ul class="bullets" style="font-size: 26px;">
+        <li>Encode the procedure once, in a markdown file.</li>
+        <li>Auto-trigger when AI detects the task — no invocation.</li>
+        <li>Same quality every time, for every team member.</li>
+        <li>Version-controlled, reviewable, improvable.</li>
+        <li>Tribal knowledge becomes team infrastructure.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p4/why</span>
+    <span>20 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 22  PILLAR 4 PART 2 — WHAT & HOW                              -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Skills Anatomy" data-screen-label="22 Skills Anatomy" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="21">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">4</span>PART 2 · ANATOMY</div>
+  </div>
+
+  <h2 class="title" style="max-width: 26ch; font-size: clamp(48px, 5vw, 64px);">Agents change <span style="color: var(--ink-3);">who</span> the AI is.<br>Skills change <span class="accent-text">how</span> it does a task.</h2>
+
+  <div style="display:grid; grid-template-columns: 1fr 1.1fr; gap: 40px; margin-top: 28px; flex:1; min-height: 0;">
+    <div class="col" style="display:flex; flex-direction:column; gap: 20px; min-width: 0;">
+      <div class="tree" style="font-size: 22px; line-height: 1.45;">
+        <div class="row hi"><span class="g">📁</span><span class="f">.github/skills/design-patterns/</span><span class="note">project</span></div>
+        <div class="row" style="margin-left: 24px;"><span class="g">└─</span><span>📄</span><span class="f">SKILL.md</span></div>
+        <div class="row" style="margin-top: 12px;"><span class="g">📁</span><span class="f">~/.copilot/skills/design-patterns/</span><span class="note">user</span></div>
+        <div class="row" style="margin-left: 24px;"><span class="g">└─</span><span>📄</span><span class="f">SKILL.md</span></div>
+      </div>
+
+      <div class="card" style="padding: 22px;">
+        <div class="card-h accent">Auto-triggering</div>
+        <div style="font-size: 24px; color: var(--ink-2); line-height: 1.4;">AI matches your prompt against each skill's description. No slash command, no invocation.</div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
+          <span class="pill accent"><span class="dot"></span>"design pattern review"</span>
+          <span class="pill accent"><span class="dot"></span>"architectural review"</span>
+          <span class="pill accent"><span class="dot"></span>"anti-pattern check"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="term" style="align-self: start; font-size: 19px;">
+      <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>SKILL.md · design-patterns</span></div>
+      <div class="term-body" style="font-size: 19px; line-height: 1.5;"><span class="com">---</span>
+<span class="key">name</span>: <span class="str">design-patterns</span>
+<span class="key">description</span>: <span class="str">"Design-pattern review — arch &amp; anti-pattern"</span>
+<span class="com"># matched against user's prompt</span>
+<span class="com">---</span>
+
+<span class="fn">## Inputs</span>
+ · architecture · language · focus area
+
+<span class="fn">## Activation</span>
+ · microservices · event-driven · monolith
+
+<span class="fn">## Severity</span>
+ · CRITICAL · HIGH · MEDIUM · INFO
+
+<span class="fn">## Checks</span>
+ index → <span class="str">checks/dp-*.md</span>
+</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p4/anatomy</span>
+    <span>21 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 23  PILLAR 4 PART 3 — IN ACTION                               -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Skills in Action" data-screen-label="23 Skills in Action" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="22">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">4</span>PART 3 · IN ACTION</div>
+  </div>
+
+  <h2 class="title" style="max-width: 24ch;">The opening demo,<br>replayed.</h2>
+  <div class="lede muted" style="margin-top: 12px;">Every step was a pillar. Here's the map.</div>
+
+  <div style="margin-top: 48px;">
+    <style>
+      .replay-row { display: grid; grid-template-columns: 48px 1.3fr 1fr 180px; gap: 28px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--rule); }
+      .replay-row .n { font-family: var(--mono); font-size: 17px; color: var(--ink-4); letter-spacing: 0.1em; }
+      .replay-row .what { font-family: var(--mono); font-size: 24px; color: var(--ink); }
+      .replay-row .desc { font-size: 26px; color: var(--ink-3); }
+      .replay-row .pillar { justify-self: end; }
+    </style>
+    <div class="replay-row"><span class="n">01</span><span class="what">ADO PR #1234</span><span class="desc">ADO MCP fetches the PR</span><span class="pillar"><span class="pill">Pillar 5</span></span></div>
+    <div class="replay-row"><span class="n">02</span><span class="what">&gt; code review PR #1234</span><span class="desc">Agent trigger matched</span><span class="pillar"><span class="pill">Pillar 3</span></span></div>
+    <div class="replay-row"><span class="n">03</span><span class="what">design-patterns</span><span class="desc">Skill auto-loads from description</span><span class="pillar"><span class="pill accent">Pillar 4</span></span></div>
+    <div class="replay-row"><span class="n">04</span><span class="what">sub-agents × 3</span><span class="desc">Policies run concurrently</span><span class="pillar"><span class="pill">Pillar 3</span></span></div>
+    <div class="replay-row"><span class="n">05</span><span class="what">inline comments + summary</span><span class="desc">Reporting skill formats output</span><span class="pillar"><span class="pill accent">Pillar 4</span></span></div>
+  </div>
+
+  <div class="card plain" style="margin-top: 36px; background: var(--accent-soft); border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--rule)); padding: 20px 28px;">
+    <div style="font-size: 26px; color: var(--ink);"><strong>Why MCP, not az CLI?</strong> <span class="muted">Inline threaded comments need the ADO REST API. The MCP handles it — the plugin bundles the wiring.</span></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p4/in-action</span>
+    <span>22 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 24  PILLAR 4 PART 4 — CHECKMARX SHOWCASE                      -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Checkmarx Showcase" data-screen-label="24 Checkmarx Showcase" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="23">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">4</span>PART 4 · SHOWCASE</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch; font-size: 56px;">Checkmarx remediation. Same structure, different domain.</h2>
+
+  <div style="display:grid; grid-template-columns: 1fr 1.3fr; gap: 56px; margin-top: 36px; flex:1; min-height: 0;">
+    <div class="card" style="background: var(--ink); color: var(--bg); border-color: var(--ink);">
+      <div class="card-h" style="color: var(--ink-5);">Scenario</div>
+      <div style="font-size: 28px; line-height: 1.35; color: var(--bg);">Checkmarx scan returns <span class="accent-text">12 findings</span> across your C# backend.</div>
+      <div style="font-size: 22px; color: var(--ink-5); margin-top: 14px; line-height: 1.4;">Engineer faces a wall of SAST output — severity mixed, context missing, fixes unclear.</div>
+    </div>
+
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 16px;">The skill's flow</div>
+      <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px;">
+        <li style="display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 22px; line-height: 1.3; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">01</span><span><strong>Load report</strong> <span class="muted">— skill reads Checkmarx output.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 22px; line-height: 1.3; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">02</span><span><strong>Prioritize</strong> <span class="muted">— sort by severity + exploitability.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 22px; line-height: 1.3; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">03</span><span><strong>Propose fixes</strong> <span class="muted">— per-finding, code-aware.</span></span></li>
+        <li style="display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 8px 0; font-size: 22px; line-height: 1.3; align-items: baseline;"><span style="font-family: var(--mono); font-size: 14px; color: var(--accent); letter-spacing: 0.08em;">04</span><span><strong>Verify</strong> <span class="muted">— re-check each fix matches policy.</span></span></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card plain" style="margin-top: 24px; background: var(--accent-soft); border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--rule)); padding: 18px 24px;">
+    <div class="card-h accent">The team-lead angle</div>
+    <div style="font-size: 24px; color: var(--ink);">Your security team's expertise becomes a shareable skill. Every engineer handles Checkmarx findings the same way — <em>your way</em>.</div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p4/checkmarx</span>
+    <span>23 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 25  PILLAR 5 COVER                                            -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Pillar 5 Cover" data-screen-label="25 Pillar 5 Cover" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="24">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>Pillar 5 of 6</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: auto 1fr; gap: 80px; align-items: end;">
+    <div class="big-num">05</div>
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 20px;">Pillar 5 · Integration</div>
+      <h1 class="display" style="max-width: 18ch;">MCP vs<br>CLI Skill.</h1>
+      <div class="lede" style="margin-top: 28px; max-width: 32ch;">Two ways to connect AI to Azure DevOps — pick by frequency, not by feature list.</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p5/cover</span>
+    <span>24 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 26  PILLAR 5 — CLI vs MCP                                     -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="CLI vs MCP" data-screen-label="26 CLI vs MCP" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="25">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="pillar-badge"><span class="n">5</span>INTEGRATION CHOICES</div>
+  </div>
+
+  <h2 class="title" style="max-width: 20ch;">On-demand vs always-on.</h2>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 56px; flex:1;">
+    <div class="card" style="position: relative; padding: 36px;">
+      <div style="position: absolute; top: 24px; right: 28px;"><span class="pill accent"><span class="dot"></span>Recommended</span></div>
+      <div class="card-h" style="max-width: 60%;">Option A</div>
+      <div style="font-size: 40px; font-weight: 600; letter-spacing: -0.025em; margin-top: 4px;">CLI Skill</div>
+      <div style="font-size: 24px; color: var(--ink-3); margin-top: 8px;">Occasional ADO during coding</div>
+
+      <hr class="rule" style="margin: 24px 0;">
+      <ul class="bullets" style="font-size: 24px;">
+        <li>Loads on-demand — context stays clean.</li>
+        <li>Uses <span class="inline-code">az</span> CLI under the hood.</li>
+        <li>Covers work items, PRs, pipelines, wiki, releases, artifacts, security/admin.</li>
+      </ul>
+      <div class="term" style="margin-top: 20px; font-size: 22px;">
+        <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>install</span></div>
+        <div class="term-body"><span class="prompt">$</span> <span class="cmd">npx skills add ... azure-devops-cli</span></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 36px;">
+      <div class="card-h">Option B</div>
+      <div style="font-size: 40px; font-weight: 600; letter-spacing: -0.025em; margin-top: 4px;">MCP Server</div>
+      <div style="font-size: 24px; color: var(--ink-3); margin-top: 8px;">Heavy, continuous ADO interaction</div>
+
+      <hr class="rule" style="margin: 24px 0;">
+      <ul class="bullets" style="font-size: 24px;">
+        <li><strong>88 tools</strong> registered at startup.</li>
+        <li>Rich: test plans, code search, advanced security alerts.</li>
+        <li>Microsoft-maintained · zero manual setup when bundled.</li>
+      </ul>
+      <div class="term" style="margin-top: 20px; font-size: 22px;">
+        <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>.mcp.json</span></div>
+        <div class="term-body"><span class="key">"azure-devops"</span>: <span class="str">"@azure-devops/mcp IHIS-HIP"</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card plain" style="margin-top: 32px; background: var(--accent-soft); border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--rule)); padding: 20px 28px;">
+    <div style="font-size: 26px;"><strong>Rule of thumb:</strong> <span class="muted">CLI Skill for occasional ADO during coding. MCP for heavy, continuous interaction.</span></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/p5/compare</span>
+    <span>25 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 27  COMPOSITION                                               -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Composition" style="background: var(--ink); color: var(--bg);" data-screen-label="27 Composition" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="26">
+  <div class="slide-header" style="color: var(--ink-5);">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo brand-logo-light"></div>
+    <div class="eyebrow" style="color: var(--ink-5);"><span class="dot"></span>The mental model</div>
+  </div>
+
+  <h2 class="title" style="color: var(--bg); max-width: 22ch;">One <span class="inline-code" style="font-size: 0.75em; background: #141418; border-color: #2A2A2D; color: var(--accent);">plugin.json</span>. Every pillar. One install.</h2>
+
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 56px; flex:1;">
+    <div class="col">
+      <div class="card" style="background: #141418; border-color: #2A2A2D;">
+        <div class="card-h" style="color: var(--ink-5);">Pillar mapping</div>
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: 10px 20px; font-size: 24px;">
+          <span style="font-family: var(--mono); color: var(--accent);">"mcpServers"</span><span style="color: var(--ink-5);">→ Pillar 5</span>
+          <span style="font-family: var(--mono); color: var(--accent);">"agents"</span><span style="color: var(--ink-5);">→ Pillar 3</span>
+          <span style="font-family: var(--mono); color: var(--accent);">"skills"</span><span style="color: var(--ink-5);">→ Pillar 4</span>
+          <span style="font-family: var(--mono); color: var(--accent);">triggers</span><span style="color: var(--ink-5);">→ Pillar 1</span>
+          <span style="font-family: var(--mono); color: var(--accent);">SKILL.md + checks</span><span style="color: var(--ink-5);">→ Pillar 2</span>
+        </div>
+      </div>
+      <div class="card" style="background: #141418; border-color: #2A2A2D;">
+        <div class="card-h" style="color: var(--accent);">Why it clicks</div>
+        <div style="font-size: 26px; color: var(--bg); line-height: 1.4;">Install this JSON → engineers get agent + skills + MCP in <strong>one action</strong>.</div>
+        <div style="font-size: 24px; color: var(--ink-5); margin-top: 10px;">Bundle once, ship to every teammate. That's distribution.</div>
+      </div>
+    </div>
+
+    <div class="term" style="align-self: start;">
+      <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>plugin.json · code-review</span></div>
+      <div class="term-body">{
+  <span class="key">"name"</span>: <span class="str">"code-review"</span>,
+  <span class="key">"description"</span>: <span class="str">"Framework + policy plugins"</span>,
+  <span class="key">"mcpServers"</span>: <span class="str">".mcp.json"</span>,
+  <span class="key">"agents"</span>: [
+    <span class="str">"./agents/code-reviewer.agent.md"</span>
+  ],
+  <span class="key">"skills"</span>: [
+    <span class="str">"./skills/design-patterns"</span>,
+    <span class="str">"./skills/hims-ads-policy"</span>,
+    <span class="out">…</span>
+  ]
+}
+</div>
+    </div>
+  </div>
+
+  <div class="slide-footer" style="border-color: #2A2A2D; color: var(--ink-5);">
+    <span class="tag" style="color: var(--ink-5);">/composition</span>
+    <span>26 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 28  CAPSTONE — SETUP                                          -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Capstone Setup" data-screen-label="28 Capstone Setup" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="27">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow accent"><span class="dot"></span>Capstone · Setup</div>
+  </div>
+
+  <h2 class="title" style="max-width: 20ch;">Let's work on<br>a real project.</h2>
+  <div class="lede muted" style="margin-top: 10px;">Clone the demo repo. Run it. Everything that follows happens on real code.</div>
+
+  <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; margin-top: 28px; flex:1; min-height: 0;">
+    <div class="term" style="align-self: start; font-size: 19px;">
+      <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>zsh · setup</span></div>
+      <div class="term-body" style="font-size: 19px; line-height: 1.5;"><span class="com"># 1 · Clone the demo repo</span>
+<span class="prompt">$</span> <span class="cmd">git clone &lt;demo-repo&gt; &amp;&amp; cd demo</span>
+
+<span class="com"># 2 · Install dependencies</span>
+<span class="prompt">$</span> <span class="cmd">npm install</span>       <span class="out"># frontend (TS)</span>
+<span class="prompt">$</span> <span class="cmd">dotnet restore</span>    <span class="out"># backend (C#)</span>
+
+<span class="com"># 3 · Authenticate with ADO</span>
+<span class="prompt">$</span> <span class="cmd">az login --use-device-code</span>
+
+<span class="com"># 4 · Start Copilot + open VS Code</span>
+<span class="prompt">$</span> <span class="cmd">copilot</span>
+  <span class="out">(+ VS Code with Copilot extension)</span>
+</div>
+    </div>
+
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 16px;">Why a real repo</div>
+      <div style="font-size: 32px; line-height: 1.25; color: var(--ink); letter-spacing: -0.015em;">Text-only examples teach concepts.<br><span class="accent-text">Real code teaches judgment.</span></div>
+      <div style="font-size: 24px; color: var(--ink-3); margin-top: 22px; line-height: 1.4; max-width: 32ch;">The agent reads your actual files, your actual conventions, your actual bugs.</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/capstone/setup</span>
+    <span>27 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 29  CAPSTONE — THE GOAL                                       -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Capstone Goal" data-screen-label="29 Capstone Goal" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="28">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow accent"><span class="dot"></span>Capstone · Goal</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">Design + build a plugin.<br>Together.</h2>
+  <div class="lede muted" style="margin-top: 10px;">35 minutes · facilitator-led · you leave with a working artifact.</div>
+
+  <div class="card" style="margin-top: 28px; background: var(--ink); color: var(--bg); border-color: var(--ink); padding: 28px 36px;">
+    <div class="card-h" style="color: var(--accent);">The goal</div>
+    <div style="font-size: 32px; line-height: 1.25; letter-spacing: -0.015em; color: var(--bg); max-width: 40ch;">Build one real plugin together — <span class="accent-text">skill(s) + agent + MCP wiring</span> — composed via the VS Code plugin UI.</div>
+    <div style="font-size: 24px; color: var(--ink-5); margin-top: 16px;">By the end: your repo has a plugin that can be installed, used, and shared with teammates.</div>
+  </div>
+
+  <div class="grid-3" style="margin-top: 28px;">
+    <div class="card">
+      <div class="step-num">Phase 01 · 10 min</div>
+      <div style="font-size: 34px; font-weight: 600; letter-spacing: -0.02em; margin-top: 6px;">Design</div>
+      <ul class="bullets" style="margin-top: 16px; font-size: 23px;">
+        <li>Plan the workflow</li>
+        <li>Shape the skill(s)</li>
+        <li>Shape the agent</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="step-num">Phase 02 · 15 min</div>
+      <div style="font-size: 34px; font-weight: 600; letter-spacing: -0.02em; margin-top: 6px;">Build pieces</div>
+      <ul class="bullets" style="margin-top: 16px; font-size: 23px;">
+        <li>Write the skill(s)</li>
+        <li>Write the agent</li>
+        <li>Note required MCPs</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="step-num">Phase 03 · 10 min</div>
+      <div style="font-size: 34px; font-weight: 600; letter-spacing: -0.02em; margin-top: 6px;">Package + test</div>
+      <ul class="bullets" style="margin-top: 16px; font-size: 23px;">
+        <li>Compose via VS Code UI</li>
+        <li>E2E test end-to-end</li>
+        <li>Iterate if needed</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/capstone/goal</span>
+    <span>28 / 28</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 30  CAPSTONE — PHASE 1 · YOUR IDEA                            -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Your Plugin Idea" data-screen-label="30 Your Plugin Idea" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="29">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow accent"><span class="dot"></span>Capstone · Phase 1</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">Your plugin-creator<br>moment.</h2>
+  <div class="lede muted" style="margin-top: 10px;">What workflow would <em>your</em> team benefit from most?</div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 32px; flex:1; min-height: 0;">
+    <div>
+      <div class="eyebrow accent" style="margin-bottom: 16px;">Ask yourself</div>
+      <ul class="bullets" style="font-size: 24px;">
+        <li>What do I explain to new engineers repeatedly?</li>
+        <li>What checklist do I mentally run every PR?</li>
+        <li>What task always gets done differently by different people?</li>
+        <li>What do I wish happened automatically?</li>
+        <li>What procedure lives only in my head?</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow" style="margin-bottom: 14px;">Real examples from other teams</div>
+      <div style="display: grid; gap: 8px;">
+        <div style="display: grid; grid-template-columns: 260px 1fr; gap: 20px; padding: 12px 0; border-bottom: 1px solid var(--rule);"><span class="mono" style="color: var(--accent); font-size: 22px;">pr-review</span><span style="color: var(--ink-2); font-size: 24px;">Team's PR quality checklist</span></div>
+        <div style="display: grid; grid-template-columns: 260px 1fr; gap: 20px; padding: 12px 0; border-bottom: 1px solid var(--rule);"><span class="mono" style="color: var(--accent); font-size: 22px;">checkmarx-remediation</span><span style="color: var(--ink-2); font-size: 24px;">SAST findings to fixes</span></div>
+        <div style="display: grid; grid-template-columns: 260px 1fr; gap: 20px; padding: 12px 0; border-bottom: 1px solid var(--rule);"><span class="mono" style="color: var(--accent); font-size: 22px;">incident-response</span><span style="color: var(--ink-2); font-size: 24px;">Triage steps + comms</span></div>
+        <div style="display: grid; grid-template-columns: 260px 1fr; gap: 20px; padding: 12px 0;"><span class="mono" style="color: var(--accent); font-size: 22px;">migration-checklist</span><span style="color: var(--ink-2); font-size: 24px;">Safe DB migrations</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card plain" style="margin-top: 20px; background: var(--accent-soft); border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--rule)); padding: 18px 24px;">
+    <div style="font-size: 24px;"><strong>Write your idea down.</strong> <span class="muted">We'll build one plugin together — you'll leave knowing how to build yours.</span></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/capstone/idea</span>
+    <span>29 / 32</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 31  CAPSTONE — BUILD 6 STEPS                                  -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Capstone Build" data-screen-label="31 Capstone Build" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="30">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow accent"><span class="dot"></span>Capstone · Build</div>
+  </div>
+
+  <h2 class="title" style="max-width: 22ch;">Build the plugin<br>together.</h2>
+  <div class="lede muted" style="margin-top: 12px;">Facilitator leads. You follow on your cloned repo.</div>
+
+  <div style="margin-top: 48px; flex:1; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: 20px;">
+    <div class="card"><div class="step-num">Step 01</div><div style="font-size: 30px; font-weight: 600; margin-top: 6px; letter-spacing: -0.015em;">Plan the internal workflow</div></div>
+    <div class="card"><div class="step-num">Step 02</div><div style="font-size: 30px; font-weight: 600; margin-top: 6px; letter-spacing: -0.015em;">Write the skill(s) that encode the procedure</div></div>
+    <div class="card"><div class="step-num">Step 03</div><div style="font-size: 30px; font-weight: 600; margin-top: 6px; letter-spacing: -0.015em;">Write the agent that invokes them</div></div>
+    <div class="card"><div class="step-num">Step 04</div><div style="font-size: 30px; font-weight: 600; margin-top: 6px; letter-spacing: -0.015em;">Identify required MCPs + wire them</div></div>
+    <div class="card"><div class="step-num">Step 05</div><div style="font-size: 30px; font-weight: 600; margin-top: 6px; letter-spacing: -0.015em;">VS Code UI → Compose plugin</div><div style="font-size: 22px; color: var(--ink-3); margin-top: 8px;">Select agents / skills / MCPs</div></div>
+    <div class="card" style="background: var(--ink); color: var(--bg); border-color: var(--ink);"><div class="step-num" style="color: var(--accent);">Step 06</div><div style="font-size: 30px; font-weight: 600; margin-top: 6px; letter-spacing: -0.015em; color: var(--bg);">E2E test in a fresh session</div><div style="font-size: 22px; color: var(--ink-5); margin-top: 8px;">Packaged plugin, shareable, ready.</div></div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/capstone/build</span>
+    <span>30 / 32</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 32  ROLLOUT PLAYBOOK                                          -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Rollout Playbook" data-screen-label="32 Rollout Playbook" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="31">
+  <div class="slide-header">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo"></div>
+    <div class="eyebrow"><span class="dot"></span>Closing · Rollout</div>
+  </div>
+
+  <h2 class="title" style="max-width: 20ch;">Your rollout<br>playbook.</h2>
+  <div class="lede muted" style="margin-top: 12px;">Four weeks. One habit per week.</div>
+
+  <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+    <style>
+      .week { border: 1px solid var(--rule); border-radius: var(--r-md); padding: 28px 24px; background: var(--bg-elev); display: flex; flex-direction: column; gap: 14px; }
+      .week .wn { font-family: var(--mono); font-size: 16px; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; }
+      .week .wt { font-size: 32px; font-weight: 600; letter-spacing: -0.02em; }
+      .week ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+      .week ul li { font-size: 22px; color: var(--ink-2); line-height: 1.35; padding-left: 14px; position: relative; }
+      .week ul li::before { content: "·"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    </style>
+    <div class="week">
+      <span class="wn">Week 01</span>
+      <div class="wt">Foundation</div>
+      <ul>
+        <li>Install Copilot CLI, authenticate</li>
+        <li>Verify team subscriptions</li>
+        <li>Daily habits: <span class="inline-code" style="font-size: 17px;">/plan</span> · <span class="inline-code" style="font-size: 17px;">/review</span> · <span class="inline-code" style="font-size: 17px;">@file</span></li>
+        <li>Write repo's <span class="inline-code" style="font-size: 17px;">AGENTS.md</span></li>
+      </ul>
+    </div>
+    <div class="week">
+      <span class="wn">Week 02</span>
+      <div class="wt">Skills + Agents</div>
+      <ul>
+        <li>Encode 1 procedure as a skill</li>
+        <li>Start user-scope, promote to <span class="inline-code" style="font-size: 17px;">.github/</span></li>
+        <li>Wrap in a specialist agent</li>
+      </ul>
+    </div>
+    <div class="week">
+      <span class="wn">Week 03</span>
+      <div class="wt">Connectors</div>
+      <ul>
+        <li>Add 1 MCP team needs (ADO / Jira / DB)</li>
+        <li>Wire agents &amp; skills to live data</li>
+        <li>Test end-to-end with real tasks</li>
+      </ul>
+    </div>
+    <div class="week" style="background: var(--ink); color: var(--bg); border-color: var(--ink);">
+      <span class="wn">Week 04</span>
+      <div class="wt" style="color: var(--bg);">Plugins &amp; distribution</div>
+      <ul>
+        <li style="color: var(--ink-5);">Bundle agent + skills + MCP via VS Code UI</li>
+        <li style="color: var(--ink-5);">Publish internally — one install for all</li>
+        <li style="color: var(--ink-5);">Stretch: <span class="inline-code" style="font-size: 17px; background:#141418; color: var(--accent); border-color: #2A2A2D;">copilot -p "…"</span> in CI</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card plain" style="margin-top: 36px; background: var(--accent-soft); border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--rule)); padding: 22px 28px;">
+    <div class="card-h accent">Three starter templates every team should have</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 10px; font-size: 23px;">
+      <div><span class="mono muted">01 ·</span> <span class="inline-code" style="font-size: 0.85em;">AGENTS.md + docs/</span> — team standards + indexed details</div>
+      <div><span class="mono muted">02 ·</span> <span class="inline-code" style="font-size: 0.85em;">.github/skills/&lt;name&gt;/SKILL.md</span> — one encoded procedure</div>
+      <div><span class="mono muted">03 ·</span> <strong>Your team's plugin</strong> — bundled agent + skills + MCP</div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="tag">/closing/playbook</span>
+    <span>31 / 32</span>
+  </div>
+</section>
+
+
+<!-- ========================================================== -->
+<!-- 33  CLOSING                                                   -->
+<!-- ========================================================== -->
+<section data-slide="" data-label="Closing" style="background: #0E0E11; color: var(--bg); position: relative; overflow: hidden;" data-screen-label="33 Closing" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="32">
+  <div aria-hidden="true" style="position: absolute; inset: 0; background: url('assets/synapxe-gradient-bg.jpg') center/cover no-repeat; opacity: 0.45; pointer-events: none;"></div>
+  <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,14,17,0.35) 0%, rgba(14,14,17,0.75) 100%); pointer-events: none;"></div>
+  <div style="position: relative; display: flex; flex-direction: column; height: 100%;">
+  <div class="slide-header" style="color: var(--ink-5);">
+    <div class="brand"><img src="assets/synapxe-logo.png" alt="Synapxe" class="brand-logo brand-logo-light"></div>
+    <div class="eyebrow" style="color: var(--ink-5);"><span class="dot"></span>Start building</div>
+  </div>
+
+  <div style="flex:1; display: flex; flex-direction: column; justify-content: center; max-width: 1500px;">
+    <div class="eyebrow accent" style="margin-bottom: 36px;">Your team's AI system</div>
+    <h1 class="hero" style="color: var(--bg); max-width: 22ch; line-height: 0.98;">Your engineers don't<br>need to learn prompts.</h1>
+    <div style="font-size: 56px; font-weight: 400; color: var(--ink-5); margin-top: 28px; letter-spacing: -0.02em; line-height: 1.1;">They need you to set up <span class="accent-text">the system</span>.</div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; align-items: end; gap: 48px;">
+    <div style="font-size: 96px; font-weight: 600; letter-spacing: -0.04em; color: var(--bg);">Questions?</div>
+    <div style="font-family: var(--mono); font-size: 17px; color: var(--ink-5); letter-spacing: 0.1em; text-transform: uppercase; text-align: right;">
+      <div>End of deck</div>
+      <div style="color: var(--accent); margin-top: 6px;">→ workshop.repo/playbook</div>
+    </div>
+  </div>
+
+  <div class="slide-footer" style="border-color: #2A2A2D; color: var(--ink-5);">
+    <span class="tag" style="color: var(--ink-5);">/closing</span>
+    <span>32 / 32</span>
+  </div>
+  </div>
+</section>
+
+</deck-stage>
+
+<!-- Speaker notes omitted per default -->
+
+<!-- Tweaks panel (hidden until toolbar toggles) -->
+<div id="tweaks-panel" role="dialog" aria-label="Tweaks" class="">
+  <h4>Tweaks</h4>
+  <div class="tw-row">
+    <label>Accent hue</label>
+    <div class="tw-hues" id="tw-hues"><button title="Indigo" style="background: oklch(0.58 0.18 270);" class="on"></button><button title="Blue" style="background: oklch(0.58 0.18 240);"></button><button title="Teal" style="background: oklch(0.58 0.18 200);"></button><button title="Green" style="background: oklch(0.58 0.18 150);"></button><button title="Amber" style="background: oklch(0.58 0.18 60);"></button><button title="Red" style="background: oklch(0.58 0.18 20);"></button><button title="Pink" style="background: oklch(0.58 0.18 330);"></button><button title="Indigo" style="background: oklch(0.58 0.18 270);" class="on"></button><button title="Blue" style="background: oklch(0.58 0.18 240);"></button><button title="Teal" style="background: oklch(0.58 0.18 200);"></button><button title="Green" style="background: oklch(0.58 0.18 150);"></button><button title="Amber" style="background: oklch(0.58 0.18 60);"></button><button title="Red" style="background: oklch(0.58 0.18 20);"></button><button title="Pink" style="background: oklch(0.58 0.18 330);"></button></div>
+  </div>
+  <div class="tw-row">
+    <label>Mode</label>
+    <div class="tw-seg" id="tw-mode">
+      <button data-val="light" class="on">Light</button>
+      <button data-val="dark">Dark</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/*EDITMODE-BEGIN*/const TWEAK_DEFAULTS = {
+  "accentHue": 270,
+  "mode": "light"
+}/*EDITMODE-END*/;
+
+(function() {
+  const state = Object.assign({}, TWEAK_DEFAULTS);
+  const apply = () => {
+    document.documentElement.style.setProperty('--accent-h', String(state.accentHue));
+    document.documentElement.setAttribute('data-mode', state.mode);
+  };
+  apply();
+
+  const hues = [{n:'Indigo', h:270}, {n:'Blue', h:240}, {n:'Teal', h:200}, {n:'Green', h:150}, {n:'Amber', h:60}, {n:'Red', h:20}, {n:'Pink', h:330}];
+  const huesEl = document.getElementById('tw-hues');
+  hues.forEach(({n,h}) => {
+    const b = document.createElement('button');
+    b.title = n;
+    b.style.background = `oklch(58% 0.18 ${h})`;
+    if (h === state.accentHue) b.classList.add('on');
+    b.onclick = () => {
+      state.accentHue = h; apply();
+      huesEl.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      persist();
+    };
+    huesEl.appendChild(b);
+  });
+
+  const modeEl = document.getElementById('tw-mode');
+  modeEl.querySelectorAll('button').forEach(b => {
+    b.onclick = () => {
+      state.mode = b.dataset.val;
+      modeEl.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      apply();
+      persist();
+    };
+    if (b.dataset.val === state.mode) b.classList.add('on');
+  });
+
+  function persist() {
+    window.parent.postMessage({type: '__edit_mode_set_keys', edits: {
+      accentHue: state.accentHue, mode: state.mode
+    }}, '*');
+  }
+
+  window.addEventListener('message', (e) => {
+    const d = e.data || {};
+    if (d.type === '__activate_edit_mode') document.getElementById('tweaks-panel').classList.add('open');
+    if (d.type === '__deactivate_edit_mode') document.getElementById('tweaks-panel').classList.remove('open');
+  });
+  window.parent.postMessage({type: '__edit_mode_available'}, '*');
+})();
+</script>
+
+<script>
+  // Auto-print once fonts + deck-stage are ready
+  (async () => {
+    try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch (e) {}
+    // Wait for deck-stage to mount and inject its @page rule
+    const stage = document.querySelector('deck-stage');
+    if (stage && !stage.shadowRoot) {
+      await new Promise(r => customElements.whenDefined('deck-stage').then(r));
+    }
+    await new Promise(r => setTimeout(r, 600));
+    window.print();
+  })();
+</script>
+
+</body></html>
